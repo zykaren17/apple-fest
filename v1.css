@@ -1,0 +1,299 @@
+/*nav bar*/
+nav a {
+  text-decoration: none;
+}
+nav {
+  font-family: sans-serif;
+  background-color: #8F3B1B;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav ul li {
+  font-size: 1em;
+  text-transform: uppercase;
+  display:flex;
+}
+nav ul li .active {
+  color: #B99C6B;
+  border-color: #B99C6B;
+  font-weight: bold;
+}
+nav ul li a {
+  display: block;
+  border: 1px solid;
+  padding: .6em 1em;
+  margin: .4em;
+  color: #613318;
+  border-color: #613318;
+}
+/* Background Images */
+
+/* Photo by Karen Zhan */
+.home{
+    background-image: url('../images/mac.JPG');
+    background-size: cover;
+    font-family: sans-serif;
+}
+/* Photo Source: https://www.pexels.com/photo/abstract-antique-backdrop-background-164005/ */
+.gallery{
+  background-image: url('../images/wood.jpg');
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+/* Photo Source: http://dishingjh.com/how-do-you-like-them-apples/#prettyPhoto/0/ */
+.entertainment{
+  background-image: url('../images/applesbackground.jpg');
+  background-size: cover;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Photo Source: https://wallpapertag.com/autumn-leaves-background */
+.directionsbody {
+  background-image: url('../images/leaves.jpg');
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.food {
+  background-color: #DBCA69;
+  font-family: sans-serif;
+}
+
+/* Photo Source: http://issnschoolspa.com/istock-photo-fall-promotion-background/ */
+.vendor {
+  background-image: url('../images/fall.jpg');
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+/* Home Page */
+.homepage {
+  border-style: none;
+  background-color: transparent;
+  font-size: 80px;
+  text-align: center;
+  vertical-align: center;
+  color: #FBFAF8;
+  margin-top: 15%;
+}
+.homepagesubheading{
+  font-size:35px;
+  text-align: center;
+  color: #FBFAF8;
+  margin-top: -30px;
+}
+/* Headings */
+h1 {
+  color: #8F3B1B;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 36px;
+  border-style: solid;
+  border-color: #8F3B1B;
+  background-color: #FBFAF8;
+}
+
+/* Vendors */
+.vendorpic{
+  display: block;
+  width: 100%;
+}
+
+.vendorrow{
+  display: flex;
+}
+
+.vendorcolumn{
+  flex:33.33%;
+  padding: 15px;
+}
+
+.vendortext {
+  border-style: solid;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  background-color: #A3ADB8;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+@media (max-width:600px) {
+  .vendorrow{
+    display: inline-block;
+  }
+}
+/* Entertainment */
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+}
+
+table, tr, th, td {
+  border: 4px solid #8F3B1B;
+  border-collapse: collapse;
+}
+
+tr {
+  padding: 25px;
+  text-align: center;
+  background-color: #DBCA69;
+  color: #613318;
+}
+th {
+  padding: 28px;
+  font-size: 28px;
+}
+td{
+  padding: 31px;
+}
+
+/* Food Page */
+.foodgrid {
+  line-height:0;
+  text-align:center;
+}
+
+.foodgrid .name {
+  width: 33.33%;
+  min-height:20em;
+  max-height: 400px;
+  max-width: 400px;
+  line-height:1.2;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  color: #A9A18C;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 2px #000;
+  margin-top: 10px;
+  margin-right: 6px;
+}
+
+.foodgrid .name img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.foodgrid .name:before {
+content: '';
+background-color: rgba(15,15,15,0.5);
+display: block;
+width: 100%;
+height: 100%;
+z-index: 0;
+position: absolute;
+}
+
+.foodgrid .name:hover:before {
+  display:none;
+}
+
+.foodgrid .name .textname {
+vertical-align: middle;
+text-align: center;
+width: 80%;
+position: absolute;
+left:50%;
+top:50%;
+transform: translate(-50%, -50%);
+font-size:28px;
+}
+
+.foodgrid .name .textname .actualtext {
+display: none;
+}
+
+.foodgrid .name:hover .textname .actualtext {
+display: block;
+font-size:16px;
+}
+
+@media (max-width:900px) {
+  .foodgrid .name {
+  width:50% }
+}
+
+@media (max-width: 600px) {
+  .foodgrid .name {
+    width: 100%;
+  }
+}
+
+/* Directions */
+.map {
+  width: 50%;
+  float: left;
+  margin-top: 16px;
+  margin-left: 20px;
+}
+
+.directions {
+  border-style: solid;
+  border-color: #613318;
+  padding: 25px;
+  width: 40%;
+  font-family: sans-serif;
+  margin-right: 20px;
+  background-color: #DBCA69;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+  .map {
+    width: 100%;
+    float: none;
+  }
+  .directions {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+/*Gallery*/
+
+main {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-items: center;
+}
+
+.column {
+  flex: 33%;
+  margin: auto;
+}
+
+.column img {
+  justify-items: center;
+  max-width: 400px;
+  margin-top: 30px;
+  vertical-align: middle;
+}
